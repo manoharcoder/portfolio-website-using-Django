@@ -1,0 +1,33 @@
+{% extends 'basic.html' %}
+{% load static %}
+
+{% block title %}  MANU CODER {% endblock title %}
+{% block scripts %} {% endblock scripts %}
+
+{% block hero %}
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+  <div class="hero-container" data-aos="fade-in">
+    <h1>Manohar Bogala</h1>
+    <p>I'm <span class="typed" data-typed-items="Python Coder,Coding Enthusiastic, Full-Stack Web-Designer,Full-Stack Web-Developer,good team playes"></span></p>
+  </div>
+</section><!-- End Hero -->
+
+{% endblock hero %}
+
+
+{% block body %}
+
+{% for message in messages %}
+
+<div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+  <strong>{{message}} </strong> 
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %}
+
+{% endblock body %}
+
+
+{% block styleclasses %}{% endblock styleclasses %}
