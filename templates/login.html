@@ -31,7 +31,7 @@
             {% endfor %}
             
 
-            <div class="card p-2 bg-info">
+            <div class="card p-2 bg-primary">
                 <form action="/authapp/login/" method="post">{% csrf_token %}
                     <div class="form-group mt-3 ">
                         <h5><span><i class="bx bx-envelope"></i>Email</span></h5>
@@ -49,7 +49,7 @@
 
                     </div>
                      <br>
-                    <h5> Are you new user ?<a href="/authapp/signup/">Signup</a></h5>
+                    <h5> Are you new user ?<a href="/authapp/signup/" class=" bg-dark text-danger">Signup</a></h5>
                 </form>
             </div>
 

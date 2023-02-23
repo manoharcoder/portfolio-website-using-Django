@@ -1,7 +1,16 @@
 {% extends 'basic.html' %}
 {% load static %}
 
-{% block title %}  Contact {% endblock title %}
+{% block title %}  Contact-page {% endblock title %}
+
+
+{% block styleclasses %} 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% endblock styleclasses %}
+{% block icons %}
+<span><i class="fa-thin fa-house-user"></i></span>
+{% endblock icons %}
+
 {% block scripts %} 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -80,5 +89,4 @@
 {% endblock body %}
 
 
-{% block styleclasses %}{% endblock styleclasses %}
 
